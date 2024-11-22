@@ -18,7 +18,11 @@ namespace Testobject
         
         }
 
-
+        /// <summary>
+        /// Заходит под в систему под выбранным пользователем
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="password"></param>
         public void AutorizationSistem(string name, string password)
         {
             Driver.FindElement(By.XPath("//*[@id = 'user-name']")).SendKeys(name);
